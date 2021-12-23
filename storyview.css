@@ -1,0 +1,153 @@
+html, body, #container{
+    width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+/* [ STORYVIEW STYLING ] */
+.nodisp{
+    display: none;
+}
+
+/* [ TOGGLE ] */
+.storyview__switch {
+	margin: 27px auto 0;
+    margin-bottom: 30px;
+
+	position: relative;
+	width: 220px;
+	height: 50px;
+	background-color: #8c9197;
+	border-radius:35px;
+	font-size: 0;
+    font-family: sans-serif;
+}
+.storyview__switch a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 12px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+.storyview__switch .sv__animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 35px;
+}
+.sv__toggle:nth-child(1) {
+	width: 110px;
+}
+.sv__toggle:nth-child(2) {
+	width: 110px;
+}
+
+.storyview__switch .sv__start-av { /*, a:nth-child(1):hover~.sv__animation for hover effect */
+	width: 110px;
+	left: 0;
+	background-color: #333;
+}
+.storyview__switch .sv__start-sv { /*  a:nth-child(2):hover~.sv__animation for hover effect */
+	width: 110px;
+	left: 110px;
+	background-color: #6666b1;
+}
+
+/* [ END TOGGLE ] */
+
+.storyview__container, .otherview__container{
+    width: 400px;
+    margin: 0 auto;
+}
+.flex-nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.storyview__indicator{
+    height: 4px;
+    border-radius: 15px;
+    background: rgba(250,250,250,0.46);
+    width: 100%;
+    margin: 0;
+    z-index: 3;
+}
+.sv__indicator-active{
+    background: rgba(161, 161, 161, 0.76);
+}
+  .sv__item {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 711px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 15px;
+  }
+
+  @media screen and (max-width:600px) {
+      .sv__item{
+        margin: 10px auto;
+      }
+  }
+  .sv__item:hover {
+    background-size: cover;
+  }
+
+button.sv__nav-btn{
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 15px);
+    z-index: 5;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+}
+button.sv__nav-btn:hover{
+    background: rgba(0,0,0,0.25);
+    color: rgb(255, 255, 255);
+}
+.sv__nav-btn span{
+    color: rgb(255, 255, 255)!important;
+    font-size: 18px;
+}
+button.sv__btn-prev{
+    left: 5px;
+}
+button.sv__btn-next{
+    right: 5px;
+}
+div.sv__broad-click{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 80px;
+    z-index: 4;
+}
+div.sv__broad-click-prev{
+    left:0;
+}
+div.sv__broad-click-next{
+    right: 0;
+}
