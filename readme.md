@@ -1,5 +1,5 @@
 # Story View JS
-![storyviewjs logo](https://ibb.co/bsZBS90)  
+![storyviewjs logo](https://i.ibb.co/0CSMgb7/storyview-logo-s.png)  
 A simple solution to integrate a story-style image gallery to your blog article.
 Users can switch between the full article and the shorter, more visual story view.
 
