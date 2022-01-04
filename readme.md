@@ -1,11 +1,13 @@
 # Story View JS
 ![storyviewjs logo](https://i.ibb.co/0CSMgb7/storyview-logo-s.png)  
-A simple solution to integrate a story-style image gallery to your blog article.
+A simple solution to integrate a story-style image gallery to your blog article.\
 Users can switch between the full article and the shorter, more visual story view.
 
 ## Version
-Currently in bèta
-Working on more efficient image loading and content injector (easier setup).
+Currently in bèta\
+Working on more efficient image loading and content injector (easier setup)\
+Edits:\
+* Added a loader icon (can be customized in the script on line 81)
 
 # Dependencies
 Include the stylesheet in your head

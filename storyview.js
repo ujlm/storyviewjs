@@ -78,7 +78,7 @@ function changeBgPicture(i, parentId){
         // Go to last
         nextImg = imgs.length - 1;
     }
-    p.style.backgroundImage = "url('" + imgs[nextImg] + "')";
+    p.style.backgroundImage = "url('" + imgs[nextImg] + "'), url('https://scamradar.io/img/loader-large.gif')";
     p.setAttribute("sv-current-img", nextImg);
     var indicators = p.getElementsByClassName('storyview__indicator');
     for(var i = 0; i < indicators.length; i++) {
