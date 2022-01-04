@@ -6,7 +6,7 @@ Users can switch between the full article and the shorter, more visual story vie
 ## Version
 Currently in bèta\
 Working on more efficient image loading and content injector (easier setup)\
-Edits:\
+Edits:  
 * Added a loader icon (can be customized in the script on line 81)
 
 # Dependencies
